@@ -28,6 +28,7 @@ fun App() {
 }
 
 fun main() = application {
+    //This referes to "libwrapper.dll" that should be available inside C:\Program Files\Java\jdk-17.0.1\bin
     Runtime.getRuntime().loadLibrary("libwrapper")
     Window(onCloseRequest = ::exitApplication) {
         App()
